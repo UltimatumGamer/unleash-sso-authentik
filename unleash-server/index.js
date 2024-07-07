@@ -70,8 +70,7 @@ function openIdConnect(app, config, services) {
                     path: '/api/admin/login',
                     type: 'custom',
                     options: { type: 'custom' },
-                    message: `You have to identify yourself in order to use Unleash. 
-            Use PSH Enterprise SSO to login.`,
+                    message: `You have to identify yourself in order to use Unleash. Use Authentik to login.`,
                 }),
             )
             .end();
