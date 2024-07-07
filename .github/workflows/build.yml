@@ -31,7 +31,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: unleash-server
-          file: ./Dockerfile
+          file: unleash-server/Dockerfile
           push: true
           # Use buildx if set up, otherwise use the default Docker build
           builder: ${{ steps.buildx.outputs.name || 'default' }}
