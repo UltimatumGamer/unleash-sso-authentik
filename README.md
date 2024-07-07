@@ -6,7 +6,7 @@
 
 The following placeholders will be used:
 
-- `uneash.company` is the FQDN of WordPress.
+- `uneash.company` is the FQDN of Unleash.
 - `authentik.company` is the FQDN of authentik.
 
 ### Step 1 - authentik
