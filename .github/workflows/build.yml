@@ -30,8 +30,8 @@ jobs:
       - name: Build and push to GitHub Container Registry
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: unleash-server/Dockerfile
+          context: unleash-server
+          file: ./Dockerfile
           push: true
           # Use buildx if set up, otherwise use the default Docker build
           builder: ${{ steps.buildx.outputs.name || 'default' }}
