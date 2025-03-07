@@ -915,10 +915,10 @@ express-session@^1.17.3:
     safe-buffer "5.2.1"
     uid-safe "~2.1.5"
 
-express@^4.21.0:
-  version "4.21.1"
-  resolved "https://registry.yarnpkg.com/express/-/express-4.21.1.tgz#9dae5dda832f16b4eec941a4e44aa89ec481b281"
-  integrity sha512-YSFlK1Ee0/GC8QaO91tHcDxJiE/X4FbpAyQWkxAvG6AXCuR65YzK8ua6D9hvi/TzUfZMpc+BwuM1IPw8fmQBiQ==
+express@^4.21.2:
+  version "4.21.2"
+  resolved "https://registry.yarnpkg.com/express/-/express-4.21.2.tgz#cf250e48362174ead6cea4a566abef0162c1ec32"
+  integrity sha512-28HqgMZAmih1Czt9ny7qr6ek2qddF4FclbMzwhCREB6OFfH+rXAnuNCwo1/wFvrtbgsQDb4kSbX9de9lFbrXnA==
   dependencies:
     accepts "~1.3.8"
     array-flatten "1.1.1"
@@ -939,7 +939,7 @@ express@^4.21.0:
     methods "~1.1.2"
     on-finished "2.4.1"
     parseurl "~1.3.3"
-    path-to-regexp "0.1.10"
+    path-to-regexp "0.1.12"
     proxy-addr "~2.0.7"
     qs "6.13.0"
     range-parser "~1.2.1"
@@ -1211,6 +1211,13 @@ https-proxy-agent@^7.0.1, https-proxy-agent@^7.0.5:
     agent-base "^7.0.2"
     debug "4"
 
+hyperloglog-lite@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hyperloglog-lite/-/hyperloglog-lite-1.0.2.tgz#2f26bb061600f3c5afeaf2d3140cbffddfc47adc"
+  integrity sha512-ZhNsySGRHMRVZSJHTBKmg9VTMY4AUOBqv+4fZnzc1INuMsDjC1m5eDRxyA72TQiRGTTgactKyC1FGMhTBhERkA==
+  dependencies:
+    murmurhash32-node "^1.0.1"
+
 iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -1255,7 +1262,7 @@ interpret@^2.2.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-2.2.0.tgz#1a78a0b5965c40a5416d007ad6f50ad27c417df9"
   integrity sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==
 
-ip-address@^10.0.0:
+ip-address@^10.0.1:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-10.0.1.tgz#a8180b783ce7788777d796286d61bce4276818ed"
   integrity sha512-NWv9YLW4PoW2B7xtzaS3NCot75m6nK7Icdv0o3lfMceJVRfSoQwqD4wEH5rLwoKJwUiZ/rfpiVBhnaF0FK4HoA==
@@ -1459,6 +1466,11 @@ knex@3, knex@^3.1.0:
     tarn "^3.0.2"
     tildify "2.0.0"
 
+launchdarkly-eventsource@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/launchdarkly-eventsource/-/launchdarkly-eventsource-2.0.3.tgz#8a7b8da5538153f438f7d452b1c87643d900f984"
+  integrity sha512-VhFjppK7jXlcEKaS7bxdoibB5j01NKyeDR7a8XfssdDGNWCTsbF0/5IExSmPi44eDncPhkoPNxlSZhEZvrbD5w==
+
 lazy-cache@^0.2.3:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-0.2.7.tgz#7feddf2dcb6edb77d11ef1d117ab5ffdf0ab1b65"
@@ -1529,7 +1541,7 @@ lru-queue@^0.1.0:
   dependencies:
     es5-ext "~0.10.2"
 
-make-fetch-happen@^13.0.0, make-fetch-happen@^13.0.1:
+make-fetch-happen@^13.0.1:
   version "13.0.1"
   resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-13.0.1.tgz#273ba2f78f45e1f3a6dca91cede87d9fa4821e36"
   integrity sha512-cKTUFc/rbKUd/9meOvgrpJ2WrNzymt6jfRDdwg5UCnVzv9dTpEj9JS5m3wtziXVCjluIXyL8pcaukYqezIzZQA==
@@ -1733,6 +1745,11 @@ ms@2.1.3, ms@^2.1.1, ms@^2.1.3:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
+murmurhash32-node@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/murmurhash32-node/-/murmurhash32-node-1.0.1.tgz#48eb14d695ffb04d26e9b408b1dea31a281c9146"
+  integrity sha512-vpP6SDwac9ktKsCAyuSVC7ssTp1khO+fwqIPTnXFnHCGiOaOLXVKZ92vDITIhzKfrGh+NkKGTwEBK37yVzmT0A==
+
 murmurhash3js@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/murmurhash3js/-/murmurhash3js-3.0.1.tgz#3e983e5b47c2a06f43a713174e7e435ca044b998"
@@ -1931,10 +1948,10 @@ path-scurry@^1.11.1:
     lru-cache "^10.2.0"
     minipass "^5.0.0 || ^6.0.2 || ^7.0.0"
 
-path-to-regexp@0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.10.tgz#67e9108c5c0551b9e5326064387de4763c4d5f8b"
-  integrity sha512-7lf7qcQidTku0Gu3YDPc8DJ1q7OOucfa/BSsIwjuh56VU7katFvuM8hULfkwB3Fns/rsVF7PwPKVw1sl5KQS9w==
+path-to-regexp@0.1.12:
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.12.tgz#d5e1a12e478a976d432ef3c58d534b9923164bb7"
+  integrity sha512-RA1GjUVMnvYFxuqovrEqZoxxW5NUZqbwKtYz/Tt7nXerk0LbLblQmrsgdeOxV5SFHf0UDggjS/bSeOZwt1pmEQ==
 
 path-to-regexp@0.1.7:
   version "0.1.7"
@@ -2616,22 +2633,24 @@ universalify@^0.1.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
   integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
-unleash-client@6.1.2:
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-6.1.2.tgz#25630572df6e2a2de0954fb3cc2c1f59b13dfbdd"
-  integrity sha512-pWvaM8LhwpLtCTDYCVwY1tdHAWFUX9XtQymw4Ln6173+i2zhfdmyyg+ZFFBaET96iSjqvLMKCfte92VWeaNsDA==
+unleash-client@^6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-6.6.0.tgz#2fbe6a19e4f74383436b86ae62269682a4010ba0"
+  integrity sha512-xsxWobHY83d5n80aGVQVTXOVdxRw9vZxsXUeys5oucYRMzW3ymiy+QY0QBEWDORq0AffsP2suF5uj2M6On2qGw==
   dependencies:
     http-proxy-agent "^7.0.2"
     https-proxy-agent "^7.0.5"
     ip-address "^9.0.5"
+    launchdarkly-eventsource "2.0.3"
     make-fetch-happen "^13.0.1"
     murmurhash3js "^3.0.1"
+    proxy-from-env "^1.1.0"
     semver "^7.6.2"
 
-unleash-server@6.4.1:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-6.4.1.tgz#6af341390ca189690ebd504cf2e6aa8f1bce9f87"
-  integrity sha512-q85PJid9qhzIPUtPI95hws24qj7FX+ap9Ys0SDC3L9HZjEoUngpzO6KnwXcRaMWcvjWHHMTXEEAlzjHJMRrg5w==
+unleash-server@6.8.0:
+  version "6.8.0"
+  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-6.8.0.tgz#78b9d6afa3da3d854ddcbf262a2160c8daa49853"
+  integrity sha512-4OhseZnSTKzqZwZC43iSb0jNJyQ3og4syQANRYQJ9zmtmduFVQIsmFe+d9vWB93wFxZUmQVX0VNugZ64jCcYtQ==
   dependencies:
     "@slack/web-api" "^7.3.4"
     "@wesleytodd/openapi" "^1.1.0"
@@ -2651,14 +2670,15 @@ unleash-server@6.4.1:
     deep-object-diff "^1.1.9"
     deepmerge "^4.3.1"
     errorhandler "^1.5.1"
-    express "^4.21.0"
+    express "^4.21.2"
     express-rate-limit "^7.3.1"
     express-session "^1.17.3"
     fast-json-patch "^3.1.0"
     hash-sum "^2.0.0"
     helmet "^6.0.0"
     http-errors "^2.0.0"
-    ip-address "^10.0.0"
+    hyperloglog-lite "^1.0.2"
+    ip-address "^10.0.1"
     joi "^17.13.3"
     js-sha256 "^0.11.0"
     js-yaml "^4.1.0"
@@ -2670,7 +2690,7 @@ unleash-server@6.4.1:
     lodash.groupby "^4.6.0"
     lodash.sortby "^4.7.0"
     log4js "^6.0.0"
-    make-fetch-happen "^13.0.0"
+    make-fetch-happen "^13.0.1"
     memoizee "^0.4.17"
     mime "^4.0.4"
     murmurhash3js "^3.0.1"
@@ -2691,7 +2711,7 @@ unleash-server@6.4.1:
     stoppable "^1.1.0"
     ts-toolbelt "^9.6.0"
     type-is "^1.6.18"
-    unleash-client "6.1.2"
+    unleash-client "^6.6.0"
     uuid "^9.0.0"
 
 unpipe@1.0.0, unpipe@~1.0.0:
