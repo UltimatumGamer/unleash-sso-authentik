@@ -134,16 +134,16 @@
   resolved "https://registry.yarnpkg.com/@slack/types/-/types-2.14.0.tgz#913946b4bcb635dad1d39ceca73699215c38cf6f"
   integrity sha512-n0EGm7ENQRxlXbgKSrQZL69grzg1gHLAVd+GlRVQJ1NSORo0FrApR7wql/gaKdu2n4TO83Sq/AmeUOqD60aXUA==
 
-"@slack/web-api@^7.3.4":
-  version "7.7.0"
-  resolved "https://registry.yarnpkg.com/@slack/web-api/-/web-api-7.7.0.tgz#a2f4014dcfada8027049c3cb4835999c1fb8cef0"
-  integrity sha512-DtRyjgQi0mObA2uC6H8nL2OhAISKDhvtOXgRjGRBnBhiaWb6df5vPmKHsOHjpweYALBMHtiqE5ajZFkDW/ag8Q==
+"@slack/web-api@^7.9.1":
+  version "7.9.1"
+  resolved "https://registry.yarnpkg.com/@slack/web-api/-/web-api-7.9.1.tgz#bfbb2050fda3b09a33ab03eb490db39e354fde28"
+  integrity sha512-qMcb1oWw3Y/KlUIVJhkI8+NcQXq1lNymwf+ewk93ggZsGd6iuz9ObQsOEbvlqlx1J+wd8DmIm3DORGKs0fcKdg==
   dependencies:
     "@slack/logger" "^4.0.0"
     "@slack/types" "^2.9.0"
     "@types/node" ">=18.0.0"
     "@types/retry" "0.12.0"
-    axios "^1.7.4"
+    axios "^1.8.3"
     eventemitter3 "^5.0.1"
     form-data "^4.0.0"
     is-electron "2.2.2"
@@ -304,10 +304,10 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
 
-axios@^1.7.4:
-  version "1.7.7"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.7.7.tgz#2f554296f9892a72ac8d8e4c5b79c14a91d0a47f"
-  integrity sha512-S4kL7XrjgBmvdGut0sN3yJxqYzrDOnivkBiN0OFs6hLiUam3UPvswUo0kqGyhqUZGEOytHyumEdXsAkgCOUf3Q==
+axios@^1.8.3:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.9.0.tgz#25534e3b72b54540077d33046f77e3b8d7081901"
+  integrity sha512-re4CqKTJaURpzbLHtIi6XpDv20/CnpXOtjRY5/CU32L8gU8ek9UIivcfvSWvmKEngmVbrUtPpdDwWDWL7DNHvg==
   dependencies:
     follow-redirects "^1.15.6"
     form-data "^4.0.0"
@@ -610,7 +610,7 @@ d@1, d@^1.0.1, d@^1.0.2:
     es5-ext "^0.10.64"
     type "^2.7.2"
 
-date-fns@^2.25.0:
+date-fns@^2.30.0:
   version "2.30.0"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.30.0.tgz#f367e644839ff57894ec6ac480de40cae4b0f4d0"
   integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
@@ -1174,10 +1174,10 @@ hasown@^2.0.0, hasown@^2.0.2:
   resolved "https://registry.yarnpkg.com/heap/-/heap-0.2.7.tgz#1e6adf711d3f27ce35a81fe3b7bd576c2260a8fc"
   integrity sha512-2bsegYkkHO+h/9MGbn6KWcE45cHZgPANo5LXF7EvWdT0yT2EguSVO1nDgU5c8+ZOPwp2vMNa7YFsJhVcDR9Sdg==
 
-helmet@^6.0.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/helmet/-/helmet-6.2.0.tgz#c29d62014be4c70b8ef092c9c5e54c8c26b8e16e"
-  integrity sha512-DWlwuXLLqbrIOltR6tFQXShj/+7Cyp0gLi6uAb8qMdFh/YBBFbKSgQ6nbXmScYd8emMctuthmgIa7tUfo9Rtyg==
+helmet@^8.0.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/helmet/-/helmet-8.1.0.tgz#f96d23fedc89e9476ecb5198181009c804b8b38c"
+  integrity sha512-jOiHyAZsmnr8LqoPGmCjYAaiuWwjAPLgY8ZX2XrmHawt99/u1y6RgrZMTeoPfpUbV96HOalYgz1qzkRbw54Pmg==
 
 http-cache-semantics@^4.1.1:
   version "4.1.1"
@@ -1470,6 +1470,11 @@ launchdarkly-eventsource@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/launchdarkly-eventsource/-/launchdarkly-eventsource-2.0.3.tgz#8a7b8da5538153f438f7d452b1c87643d900f984"
   integrity sha512-VhFjppK7jXlcEKaS7bxdoibB5j01NKyeDR7a8XfssdDGNWCTsbF0/5IExSmPi44eDncPhkoPNxlSZhEZvrbD5w==
+
+layerr@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/layerr/-/layerr-3.0.0.tgz#bc4e0e5986ffd3ab8c3c88b458f53be8dceea29e"
+  integrity sha512-tv754Ki2dXpPVApOrjTyRo4/QegVb9eVFq4mjqp4+NM5NaX7syQvN5BBNfV/ZpAHCEHV24XdUVrBAoka4jt3pA==
 
 lazy-cache@^0.2.3:
   version "0.2.7"
@@ -2609,6 +2614,13 @@ uid-safe@~2.1.5:
   dependencies:
     random-bytes "~1.0.0"
 
+ulidx@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/ulidx/-/ulidx-2.4.1.tgz#c0f60f0552f84d115d42fd52a306033f13404c55"
+  integrity sha512-xY7c8LPyzvhvew0Fn+Ek3wBC9STZAuDI/Y5andCKi9AX6/jvfaX45PhsDX8oxgPL0YFp0Jhr8qWMbS/p9375Xg==
+  dependencies:
+    layerr "^3.0.0"
+
 undici-types@~6.19.2:
   version "6.19.8"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
@@ -2647,12 +2659,12 @@ unleash-client@^6.6.0:
     proxy-from-env "^1.1.0"
     semver "^7.6.2"
 
-unleash-server@6.8.0:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-6.8.0.tgz#78b9d6afa3da3d854ddcbf262a2160c8daa49853"
-  integrity sha512-4OhseZnSTKzqZwZC43iSb0jNJyQ3og4syQANRYQJ9zmtmduFVQIsmFe+d9vWB93wFxZUmQVX0VNugZ64jCcYtQ==
+unleash-server@^6.9.2:
+  version "6.9.2"
+  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-6.9.2.tgz#590955f05b2afa8de66d072dc7e3b53c8a841951"
+  integrity sha512-SG5fpYavBu65T4t8x2lGHW1PYoW7BYKsA6gyBfUqllCBWG0F140uitPnGVSv4n6uRdOm9ATBgl0sajD6KlA+lA==
   dependencies:
-    "@slack/web-api" "^7.3.4"
+    "@slack/web-api" "^7.9.1"
     "@wesleytodd/openapi" "^1.1.0"
     ajv "^8.12.0"
     ajv-formats "^2.1.1"
@@ -2663,7 +2675,7 @@ unleash-server@6.8.0:
     cookie-parser "^1.4.6"
     cookie-session "^2.0.0-rc.1"
     cors "^2.8.5"
-    date-fns "^2.25.0"
+    date-fns "^2.30.0"
     db-migrate "0.11.14"
     db-migrate-pg "1.5.2"
     db-migrate-shared "1.2.0"
@@ -2675,7 +2687,7 @@ unleash-server@6.8.0:
     express-session "^1.17.3"
     fast-json-patch "^3.1.0"
     hash-sum "^2.0.0"
-    helmet "^6.0.0"
+    helmet "^8.0.0"
     http-errors "^2.0.0"
     hyperloglog-lite "^1.0.2"
     ip-address "^10.0.1"
@@ -2711,6 +2723,7 @@ unleash-server@6.8.0:
     stoppable "^1.1.0"
     ts-toolbelt "^9.6.0"
     type-is "^1.6.18"
+    ulidx "^2.4.1"
     unleash-client "^6.6.0"
     uuid "^9.0.0"
 
