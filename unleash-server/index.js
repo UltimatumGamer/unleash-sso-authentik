@@ -1,9 +1,8 @@
 'use strict';
 
-const unleash = require('unleash-server');
-const passport = require('passport');
-const OpenIdConnectStrategy = require('passport-openidconnect')
-const { AuthenticationRequired, RoleName } = require("unleash-server");
+import {AuthenticationRequired, RoleName, start} from "unleash-server";
+import passport from "passport";
+import OpenIdConnectStrategy from "passport-openidconnect";
 
 
 let host = process.env.UNLEASH_HOST
@@ -13,7 +12,7 @@ let clientID = process.env.AUTH_CLIENT_ID;
 let clientSecret = process.env.AUTH_CLIENT_SECRET || '';
 
 function openIdConnect(app, config, services) {
-    const { userService } = services;
+    const {userService} = services;
 
     passport.use('openidconnect', new OpenIdConnectStrategy({
         issuer: `${authHost}/application/o/${slug}/`,
@@ -69,7 +68,7 @@ function openIdConnect(app, config, services) {
                 new AuthenticationRequired({
                     path: '/api/admin/login',
                     type: 'custom',
-                    options: { type: 'custom' },
+                    options: {type: 'custom'},
                     message: `You have to identify yourself in order to use Unleash. Use Authentik to login.`,
                 }),
             )
@@ -78,7 +77,7 @@ function openIdConnect(app, config, services) {
 }
 
 
-unleash.start({
+start({
     authentication: {
         type: 'custom',
         customAuthHandler: openIdConnect,

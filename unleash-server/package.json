@@ -2,6 +2,7 @@
   "name": "unleash-docker",
   "description": "Docker images for unleash.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "NODE_ENV=production node index.js",
     "test:ci": "echo 'no tests for unleash-docker'"
@@ -14,6 +15,6 @@
   "dependencies": {
     "passport": "^0.7.0",
     "passport-openidconnect": "^0.1.2",
-    "unleash-server": "^6.9.2"
+    "unleash-server": "^7.0.3"
   }
 }

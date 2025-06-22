@@ -1,6 +1,6 @@
 ARG NODE_VERSION
 
-FROM node:20-alpine as builder
+FROM node:22-alpine AS builder
 
 WORKDIR /unleash
 
@@ -8,7 +8,7 @@ COPY index.js package.json yarn.lock ./
 
 RUN yarn install --frozen-lockfile --production=true
 
-FROM node:20-alpine
+FROM node:22-alpine
 
 ENV NODE_ENV production
 
